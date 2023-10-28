@@ -119,6 +119,11 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 	item_path = /obj/item/clothing/under/rank/security/peacekeeper/trousers
 	restricted_roles = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY)
 
+/datum/loadout_item/under/jumpsuit/security_peacekeeper
+	name = "Security Peacekeeper Uniform"
+	item_path = /obj/item/clothing/under/rank/security/peacekeeper
+	restricted_roles = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY)
+
 /datum/loadout_item/under/jumpsuit/disco
 	name = "Superstar Cop Uniform"
 	item_path = /obj/item/clothing/under/rank/security/detective/disco
@@ -389,6 +394,14 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 	name = "Recolorable Skirt"
 	item_path = /obj/item/clothing/under/dress/skirt/skyrat/lone_skirt
 
+/datum/loadout_item/under/miscellaneous/medium_skirt
+	name = "Medium Colourable Skirt"
+	item_path = /obj/item/clothing/under/skyrat/medium_skirt
+
+/datum/loadout_item/under/miscellaneous/long_skirt
+	name = "Long Colourable Skirt"
+	item_path = /obj/item/clothing/under/skyrat/long_skirt
+
 /datum/loadout_item/under/miscellaneous/denim_skirt
 	name = "Jean Skirt"
 	item_path = /obj/item/clothing/under/dress/skirt/skyrat/jean
@@ -460,6 +473,10 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 /datum/loadout_item/under/miscellaneous/maidcostume
 	name = "Maid Costume"
 	item_path = /obj/item/clothing/under/costume/maid
+
+/datum/loadout_item/under/miscellaneous/maid_costume
+	name = "Colourable Maid Uniform"
+	item_path = /obj/item/clothing/under/maid_costume
 
 /datum/loadout_item/under/miscellaneous/yukata
 	name = "Recolorable Yukata"
@@ -631,6 +648,10 @@ GLOBAL_LIST_INIT(loadout_miscunders, generate_loadout_items(/datum/loadout_item/
 	name = "Ethereal Tunic"
 	item_path = /obj/item/clothing/under/ethereal_tunic
 
+/datum/loadout_item/under/miscellaneous/mech_suit
+	name = "Mech Suit"
+	item_path = /obj/item/clothing/under/costume/mech_suit
+	restricted_roles = list(JOB_ROBOTICIST)
 
 /*
 *	FORMAL UNDERSUITS
