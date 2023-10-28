@@ -1,7 +1,6 @@
 #define TESHARI_TEMP_OFFSET -30 // K, added to comfort/damage limit etc
 #define TESHARI_HEATMOD 1.3
 #define TESHARI_COLDMOD 0.67 // Except cold.
-
 /datum/species/teshari
 	name = "Teshari"
 	id = SPECIES_TESHARI
@@ -37,6 +36,7 @@
 		LOADOUT_ITEM_ACCESSORY = TESHARI_ACCESSORIES_ICON,
 		LOADOUT_ITEM_EARS = TESHARI_EARS_ICON
 	)
+	custom_mod_module_icon = TESHARI_MODSUIT_MODULE_ICON
 	coldmod = TESHARI_COLDMOD
 	heatmod = TESHARI_HEATMOD
 	bodytemp_normal = BODYTEMP_NORMAL + TESHARI_TEMP_OFFSET

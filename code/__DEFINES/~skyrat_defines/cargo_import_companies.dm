@@ -9,7 +9,7 @@
 #define CARGO_COMPANY_SOL_DEFENSE (1<<7)
 #define CARGO_COMPANY_MICROSTAR (1<<8)
 #define CARGO_COMPANY_VITEZSTVI_AMMO (1<<9)
-
+#define CARGO_LAPLAS_ANOMALISTIC (1<<10)
 // Company names, because the armament category and company name need to be the exact same, so use defines like this
 #define NAKAMURA_ENGINEERING_MODSUITS_NAME "Nakamura Engineering MOD Divison"
 #define BLACKSTEEL_FOUNDATION_NAME "Jarnsmiour Blacksteel Foundation"
@@ -21,6 +21,7 @@
 #define SOL_DEFENSE_DEFENSE_NAME "Sol Defense Imports"
 #define MICROSTAR_ENERGY_NAME "MicroStar Energy Weapon Coalition"
 #define VITEZSTVI_AMMO_NAME "Vitezstvi Ammo & Weapon Accessories"
+#define LAPLAS_ANOMALISTIC_NAME "Laplas anomalistic"
 
 #define COMPANY_INTEREST_GAIN_BIG 10
 #define COMPANY_INTEREST_GAIN_AVERAGE 5

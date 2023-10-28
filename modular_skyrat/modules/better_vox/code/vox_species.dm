@@ -50,7 +50,7 @@
 		LOADOUT_ITEM_MISC = VOX_PRIMALIS_BACK_ICON,
 		LOADOUT_ITEM_EARS = VOX_PRIMALIS_EARS_ICON,
 	)
-
+	custom_mod_module_icon = VOX_PRIMALIS_MODSUIT_MODULE_ICON
 
 /datum/species/vox_primalis/pre_equip_species_outfit(datum/job/job, mob/living/carbon/human/equipping, visuals_only)
 	. = ..()
