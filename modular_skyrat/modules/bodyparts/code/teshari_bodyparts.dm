@@ -2,8 +2,10 @@
 #define TESHARI_PUNCH_HIGH 6
 #define TESHARI_BURN_MODIFIER 1.25 // They take more damage from practically everything
 #define TESHARI_BRUTE_MODIFIER 1.2
+#define TESHARI_HUSK_ICON 'modular_skyrat/modules/bodyparts/icons/teshari_husk_bodyparts.dmi'
+#define TESHARI_DAMAGE_OVERLAYS_ICON 'modular_skyrat/master_files/icons/mob/species/teshari_damage_overlays.dmi'
 
-// teshari!
+// teshari! <3
 /obj/item/bodypart/head/mutant/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
 	bodyshape = parent_type::bodyshape | BODYSHAPE_CUSTOM
@@ -11,6 +13,9 @@
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
 	head_flags = HEAD_EYESPRITES|HEAD_EYECOLOR|HEAD_EYEHOLES|HEAD_DEBRAIN
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/head/mutant/teshari/Initialize(mapload)
 	worn_ears_offset = new(
@@ -38,6 +43,9 @@
 	limb_id = SPECIES_TESHARI
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/chest/mutant/teshari/Initialize(mapload)
 	worn_back_offset = new(
@@ -78,7 +86,9 @@
 	unarmed_damage_high = TESHARI_PUNCH_HIGH
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
-
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/arm/right/mutant/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
@@ -88,7 +98,9 @@
 	unarmed_damage_high = TESHARI_PUNCH_HIGH
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
-
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/leg/left/mutant/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
@@ -97,6 +109,9 @@
 	digitigrade_type = /obj/item/bodypart/leg/left/digitigrade/teshari
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/leg/right/mutant/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
@@ -105,6 +120,9 @@
 	digitigrade_type = /obj/item/bodypart/leg/right/digitigrade/teshari
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/leg/left/digitigrade/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
@@ -113,6 +131,9 @@
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
 	speed_modifier = -0.1
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 /obj/item/bodypart/leg/right/digitigrade/teshari
 	icon_greyscale = BODYPART_ICON_TESHARI
@@ -121,6 +142,9 @@
 	brute_modifier = TESHARI_BRUTE_MODIFIER
 	burn_modifier = TESHARI_BURN_MODIFIER
 	speed_modifier = -0.1
+	dmg_overlay_type = "teshari"
+	custom_damage_overlays = TESHARI_DAMAGE_OVERLAYS_ICON
+	icon_husk = TESHARI_HUSK_ICON
 
 #undef TESHARI_PUNCH_LOW
 #undef TESHARI_PUNCH_HIGH

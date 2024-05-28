@@ -1,7 +1,7 @@
 /obj/item/food/meat/slab/chicken/human
 	name = "meat"
 	tastes = list("tender meat" = 1)
-	foodtypes = MEAT | RAW | GORE
+	foodtypes = GORE
 	venue_value = FOOD_MEAT_HUMAN
 
 /obj/item/food/meat/slab/chicken/human/make_grillable()
@@ -83,7 +83,7 @@
 		/datum/reagent/consumable/nutriment/fat/oil = 2,
 	)
 	tastes = list("bun" = 2, "chikun" = 4, "Against God and Nature" = 1)
-	foodtypes = GRAIN | MEAT | FRIED | GORE
+	foodtypes = GORE
 	crafting_complexity = FOOD_COMPLEXITY_3
 	venue_value = FOOD_PRICE_CHEAP
 

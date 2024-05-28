@@ -1,6 +1,6 @@
-#define TESHARI_TEMP_OFFSET -30 // K, added to comfort/damage limit etc
-#define TESHARI_HEATMOD 1.3
-#define TESHARI_COLDMOD 0.67 // Except cold.
+#define TESHARI_TEMP_OFFSET -40 // K, added to comfort/damage limit etc
+#define TESHARI_HEATMOD 1.4
+#define TESHARI_COLDMOD 0.3 // Except cold.
 
 /datum/species/teshari
 	name = "Teshari"
@@ -13,6 +13,7 @@
 		TRAIT_LITERATE,
 		TRAIT_MUTANT_COLORS,
 		TRAIT_NO_UNDERWEAR,
+		TRAIT_NO_BLOOD_OVERLAY,
 		TRAIT_HAS_MARKINGS,
 	)
 	digitigrade_customization = DIGITIGRADE_NEVER
@@ -51,6 +52,8 @@
 	)
 	meat = /obj/item/food/meat/slab/chicken/human
 
+	var/datum/action/cooldown/spell/tehsari_agility/agility
+
 /datum/species/teshari/get_default_mutant_bodyparts()
 	return list(
 		"tail" = list("Teshari (Default)", TRUE),
@@ -87,8 +90,10 @@
 
 /datum/species/teshari/on_species_gain(mob/living/carbon/human/new_teshari, datum/species/old_species, pref_load)
 	. = ..()
-	passtable_on(new_teshari, SPECIES_TRAIT)
+	agility = new()
+	agility.Grant(new_teshari)
 
 /datum/species/teshari/on_species_loss(mob/living/carbon/C, datum/species/new_species, pref_load)
 	. = ..()
-	passtable_off(C, SPECIES_TRAIT)
+	agility.Remove(C)
+	qdel(agility)
