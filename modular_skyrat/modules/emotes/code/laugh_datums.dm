@@ -30,6 +30,11 @@ GLOBAL_LIST_EMPTY(laugh_types)
 	male_laughsounds = list('modular_skyrat/modules/emotes/sound/emotes/mothlaugh.ogg')
 	female_laughsounds = null
 
+/datum/laugh_type/teshari //Originaly ported from infinity russian build with sligthly edit maked sound more avian.
+	name = "Teshari Laugh"
+	male_laughsounds = list('modular_skyrat/modules/emotes/sound/emotes/tesharilaugh.ogg')
+	female_laughsounds = null
+
 /datum/laugh_type/insect
 	name = "Insect Laugh"
 	male_laughsounds = list('modular_skyrat/modules/emotes/sound/emotes/mothlaugh.ogg')

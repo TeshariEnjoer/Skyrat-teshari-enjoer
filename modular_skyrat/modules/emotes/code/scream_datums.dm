@@ -93,6 +93,11 @@ GLOBAL_LIST_EMPTY(scream_types)
 	male_screamsounds = list('modular_skyrat/modules/emotes/sound/emotes/raptorscream.ogg')
 	female_screamsounds = null
 
+/datum/scream_type/teshari //This is originaly ported from avali triangle starbound mod with slitghly edit.
+	name = "Teshari scream"
+	male_screamsounds = list('modular_skyrat/modules/emotes/sound/emotes/teshariscream.ogg')
+	female_screamsounds = null
+
 /datum/scream_type/rodent //Ported from Polaris/Virgo.
 	name = "Rodent Scream"
 	male_screamsounds = list('modular_skyrat/modules/emotes/sound/emotes/rodentscream.ogg')

@@ -37,6 +37,8 @@
 
 
 /datum/emote/living/cough/get_sound(mob/living/user)
+	if(isteshari(user))
+		return 'modular_skyrat/modules/emotes/sound/emotes/tesharicough.ogg'
 	if(isvox(user))
 		return 'modular_skyrat/modules/emotes/sound/emotes/voxcough.ogg'
 	if(iscarbon(user))
@@ -53,6 +55,8 @@
 	vary = TRUE
 
 /datum/emote/living/sneeze/get_sound(mob/living/user)
+	if(isteshari(user))
+		return 'modular_skyrat/modules/emotes/sound/emotes/tesharicough.ogg'
 	if(isvox(user))
 		return 'modular_skyrat/modules/emotes/sound/emotes/voxsneeze.ogg'
 	if(iscarbon(user))

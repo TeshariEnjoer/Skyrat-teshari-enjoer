@@ -5,6 +5,7 @@
 	desc = "Toggle you agility"
 	button_icon = 'modular_skyrat/master_files/icons/hud/actions.dmi'
 	button_icon_state = "agility_off"
+	overlay_icon_state = "bg_alien_border"
 	cooldown_time = AGILITY_DEFAULT_COOLDOWN_TIME
 	spell_requirements = NONE
 	var/enabled = FALSE

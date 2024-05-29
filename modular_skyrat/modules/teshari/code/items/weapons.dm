@@ -8,6 +8,7 @@
 	icon_state = "aeroglass_spear"
 	lefthand_file = 'modular_skyrat/master_files/icons/mob/inhands/melee_lefthand.dmi'
 	righthand_file = 'modular_skyrat/master_files/icons/mob/inhands/melee_righthand.dmi'
+	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/back.dmi'
 
 	throwforce = 25
 	custom_materials = list(/datum/material/aeroglass = SHEET_MATERIAL_AMOUNT * 1, /datum/material/iron = SHEET_MATERIAL_AMOUNT * 1)
