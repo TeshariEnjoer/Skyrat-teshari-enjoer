@@ -23,7 +23,6 @@
 	icon = 'modular_skyrat/master_files/icons/obj/stack_objects.dmi'
 	singular_name = "aeroglass sheet"
 	icon_state = "sheet-aeroglass"
-	inhand_icon_state = "sheet-aeroglass"
 	mats_per_unit = list(/datum/material/aeroglass=SHEET_MATERIAL_AMOUNT)
 	armor_type = /datum/armor/aeroglass
 	resistance_flags = ACID_PROOF

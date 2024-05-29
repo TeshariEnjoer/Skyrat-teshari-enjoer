@@ -8297,6 +8297,7 @@
 #include "modular_skyrat\modules\teshari\code\teshari_ability.dm"
 #include "modular_skyrat\modules\teshari\code\teshari_bodytype.dm"
 #include "modular_skyrat\modules\teshari\code\teshari_clothes.dm"
+#include "modular_skyrat\modules\teshari\code\items\recipies.dm"
 #include "modular_skyrat\modules\teshari\code\items\resources.dm"
 #include "modular_skyrat\modules\teshari\code\items\weapons.dm"
 #include "modular_skyrat\modules\ticket_counter\code\counter.dm"
